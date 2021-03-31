@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale= 1" />
+		<title>Mandy - Challenge3</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.css" rel="stylesheet" />
+		<link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet">
+		<script src="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.js"></script>
+		<script src="script/script.js" defer></script>	
+	</head>
+	<body>
+		<!--SpaceX logo-->
+		<div class="logo">
+			<img src="images/spacexlogo.png" alt="SpaceX logo"/>
+		</div>
+		
+		<!--Fly information-->
+		<div class="fly-info">
+			<p>MARS <i class="fa fa-space-shuttle"></i> EARTH</p>
+			<p id="final">Final destination: The Hague, Netherlands</p>
+		</div>
+
+		<!--Grid-->
+		<div class="grid-container">
+
+			<!--Main weather, The Hague-->
+			<div class="item1">
+				<p id="date">,</p>
+				<p id="time"></p>
+				<p id="location"><i class="fa fa-map-marker"></i>  THE HAGUE, Netherlands</p>
+				<img id="cloudImg" src="animated/01d.svg" alt="icon"/>
+				<p id="description"></p>
+				<article id="weather"></article>
+			</div>
+
+			<!--Weather London-->
+			<div class="item2">
+				<article id="weather2"></article>
+				<img id="cloudImg2" src="animated/01d.svg" alt="icon"/>
+				<p id="location2"><i class="fa fa-map-marker"></i>  London</p>
+			</div>
+
+			<!--Weather Berlin-->
+			<div class="item3">
+				<article id="weather3"></article>
+				<img id="cloudImg3" src="animated/01d.svg" alt="icon"/>
+				<p id="location3"><i class="fa fa-map-marker"></i>  Berlin</p>
+			</div>
+			
+			<!--Weather Paris-->
+			<div class="item4">
+				<article id="weather4"></article>
+				<img id="cloudImg4" src="animated/01d.svg" alt="icon"/>
+				<p id="location4"><i class="fa fa-map-marker"></i>  Paris</p>
+			</div>
+
+			<!--Map-->
+			<div class="item5">
+				<p>EXPLORE YOUR DESTINATION</p>
+				<br>
+				<div id="map"></div>
+			</div>
+		<!--End of grid-->
+		</div>
+		
+	</body>
+</html>
