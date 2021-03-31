@@ -1,0 +1,398 @@
+/*Import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+/*Opmaak html page*/
+*{
+	margin-top: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: black;
+}
+
+
+/*Logo opmaak*/
+
+.logo img{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 50%;
+	height: 40%;	
+}
+
+
+/*Fly info opmaak*/
+.fly-info{
+  	color: white;
+	text-align: center;
+	font-family: 'Roboto Mono';
+  	text-align: center;
+  	font-size: 14px;
+  	letter-spacing: 13px;
+  	margin-top: 5%;
+  	font-weight: bold;
+	
+}
+
+.fly-info p#final{
+	font-family: 'Montserrat';
+	font-size: 12px;
+	letter-spacing: 0;
+}
+
+/*start grid*/
+.grid-container{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 20px;
+	align-items: center;
+	position: relative;
+	overflow: auto;
+}
+
+/*opmaak weer in Den Haag*/
+
+.item1{
+	grid-column-start: 1;
+ 	grid-column-end: 4;
+	padding: 20px;
+	height: 350px;
+	position: relative;
+	background-image: url('../images/worldmap).png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+	font-family: 'Montserrat';
+	margin-top: 20px;
+}
+
+#date, #time{
+	color: #919191;
+	font-size: 12px;
+	display: inline-block;
+	text-align: left;
+}
+
+#location{
+	color: white;
+	font-size: 12px;
+}
+
+img#cloudImg{
+	width: 150px;
+	height: 150px;
+	
+}
+
+article#weather{
+	font-size: 80px;
+	color: white;
+	font-family: 'Ubuntu';
+}
+
+p#description{
+	font-size: 13px;
+	color: white;
+}
+
+/*Opmaak weer in London*/
+.item2{
+	grid-column-start: 1;
+ 	grid-column-end: 2;
+ 	font-family: 'Ubuntu';
+ 	color: white;
+ 	background-color: #2b2b2b;
+ 	text-align: center;
+ 	font-size: 11px;
+ 	border-radius: 7px;
+ 	padding-top: 10px;
+ 	margin-top: 20px;
+ 	
+}
+
+/*Opmaak weer in Berlin*/
+.item3{
+	grid-column-start: 2;
+ 	grid-column-end: 3;
+ 	font-family: 'Ubuntu';
+ 	color: white;
+ 	background-color: #2b2b2b;
+ 	text-align: center;
+ 	font-size: 11px;
+ 	border-radius: 7px;
+ 	padding-top: 10px;
+ 	margin-top: 20px;
+ 	
+}
+
+/*Opmaak weer in Paris*/
+
+.item4{
+	grid-column-start: 3;
+ 	grid-column-end: 4;
+ 	font-family: 'Ubuntu';
+ 	color: white;
+ 	background-color: #2b2b2b;
+ 	text-align: center;
+ 	font-size: 11px;
+ 	border-radius: 7px;
+ 	padding-top: 10px;
+ 	margin-top: 20px;
+
+ }
+
+/*Weather icon*/
+ img#cloudImg2, img#cloudImg3, img#cloudImg4{
+	width: 80px;
+	height: 80px;
+}
+
+/*Opmaak map*/
+ .item5{
+	grid-column-start: 1;
+ 	grid-column-end: 4;
+ 	text-align: center;
+	font-family: 'Montserrat';
+	padding: 20px;
+	font-size: 12px;
+	color: white;
+}
+
+#map {
+  height: 50vh;
+  width: 85vw;
+  margin:auto;
+}
+
+/*op maak markers en popup*/
+.mapboxgl-popup {
+max-width: 200px;
+}
+
+
+#popup, #title{
+	font-family: 'Montserrat';
+	font-size: 12px;
+	color: black;
+}
+
+#marker {
+	background-image: url('../images/hhs.jpg');
+	background-size: cover;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+#marker2{
+	background-image: url('../images/strijkijzer.jpg');
+	background-size: cover;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+#marker3{
+	background-image: url('../images/hs.jpg');
+	background-size: cover;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+#marker4{
+	background-image: url('../images/centrum.jpg');
+	background-size: cover;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+#marker5{
+	background-image: url('../images/binnenhof.jpg');
+	background-size: cover;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+#marker6{
+	background-image: url('../images/tweedekamer.jpg');
+	background-size: cover;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+#marker7{
+	background-image: url('../images/gemeente.jpg');
+	background-size: cover;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+/*Start Ipad device*/
+@media only screen and (min-width: 768px){
+
+/*Logo opmaak*/
+
+.logo img{
+	width: 40%;
+	height: 30%;	
+}
+
+
+/*Fly info opmaak*/
+.fly-info{
+  	margin-top: 0;
+  	letter-spacing: 14px;
+	
+}
+
+.fly-info p#final{
+	font-size: 13px;
+}
+
+/*opmaak weer in Den Haag*/
+
+.item1{
+	padding: 10px;
+	height: 400px;
+}
+
+#date, #time, #location{
+	font-size: 13px;
+}
+
+
+img#cloudImg{
+	width: 160px;
+	height: 160px;
+	
+}
+
+p#description{
+	font-size: 14px;
+}
+
+
+/*Opmaak weer in London, Berlin en Paris*/
+.item2, .item3, .item4{
+ 	font-size: 12px;
+}
+
+img#cloudImg2, img#cloudImg3, img#cloudImg4{
+	width: 100px;
+	height: 100px;
+}
+
+/*Opmaak map*/
+ .item5{
+	font-size: 13px;
+}
+
+#map {
+  height: 60vh;
+}
+
+
+#popup, #title{
+	font-size: 13px;
+}
+
+}
+
+/*Start kleine desktop*/
+@media screen and (min-width: 1280px){
+
+/*Logo opmaak*/
+
+.logo img{
+	width: 20%;
+	height: 10%;	
+	margin-left: -10px;
+	
+}
+
+
+/*Fly info opmaak*/
+.fly-info{
+  	margin-top: -50px;
+	
+}
+
+/*Weer opmaak in den haag*/
+#date, #time, #location{
+	font-size: 14px;
+}
+
+
+/*Opmaak weer in London, Berlin en Paris*/
+.item2, .item3, .item4{
+ 	font-size: 13px;
+ 	height: 200px;
+ 	padding-top: 20px;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	width: 400px;
+}
+
+
+/*Opmaak map*/
+ .item5{
+	font-size: 14px;
+}
+
+#map {
+  height: 60vh;
+  width: 90vw;
+}
+
+}
+
+/*Start grote desktop*/
+@media screen and (min-width: 1920px){
+
+/*Logo opmaak*/
+
+.logo img{	
+	margin-left: -25px;
+}
+
+
+/*Fly info opmaak*/
+.fly-info{
+  	margin-top: -70px;
+	
+}
+
+/*Weer opmaak in den haag*/
+#date, #time, #location{
+	font-size: 14px;
+}
+
+
+/*Opmaak weer in London, Berlin en Paris*/
+.item2, .item3, .item4{
+ 	font-size: 14px;
+ 	width: 600px;
+ 	
+}
+
+
+}
